@@ -100,7 +100,6 @@ export function AmountInput({
   }
 
   function onInputTextChange(val) {
-    val = reapplyThousandSeparators(val);
     val = autoDecimals
       ? appendDecimals(val, String(hideFraction) === 'true')
       : val;
